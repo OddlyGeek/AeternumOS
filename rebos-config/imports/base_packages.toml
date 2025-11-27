@@ -1,0 +1,7 @@
+[managers.system]
+items = [
+  "gnome-calculator",
+  "gnome-keyring",
+  "gnome-themes-extra",
+  "nautilus",
+]

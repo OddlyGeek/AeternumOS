@@ -1,0 +1,14 @@
+[managers.hyprland]
+items = [
+  "hyprland",
+  "hypridle",
+  "hyprland-guiutils",
+  "hyprlock",
+  "hyprpicker",
+  "hyprsunset",
+  "xdg-desktop-portal-gtk",
+  "xdg-desktop-portal-hyprland",
+  "qt5-wayland",
+  "waybar",
+  "swaybg",
+ ]
