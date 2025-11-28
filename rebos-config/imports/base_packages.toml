@@ -4,4 +4,7 @@ items = [
   "gnome-keyring",
   "gnome-themes-extra",
   "nautilus",
+  "neovim",
+  "alacritty",
+  "chromium"
 ]

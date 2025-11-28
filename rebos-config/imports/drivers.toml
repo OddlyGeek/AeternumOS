@@ -1,0 +1,4 @@
+[managers.drivers]
+items = [
+  "nvidia-driver",
+]
