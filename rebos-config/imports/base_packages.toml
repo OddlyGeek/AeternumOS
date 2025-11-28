@@ -6,5 +6,5 @@ items = [
   "nautilus",
   "neovim",
   "alacritty",
-  "chromium"
+  "chromium",
 ]
