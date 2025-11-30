@@ -1,6 +1,7 @@
 begin = [
   "drivers",
-  "hyprland",
+  "wayland",
+  # "hyprland",
   "plasma",
   "system",
 ]

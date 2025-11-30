@@ -20,7 +20,7 @@ if sudo sysrc -n kld_list | grep -qw "nvidia-drm"; then
     echo "nvidia-drm already present in kld_list"
 else
     echo "Adding nvidia-drm to kld_list"
-    sudo sysrc kld_list+=nvidia-drm
+    sudo sysrc kld_list+="nvidia-drm nvidia nvidia-modeset"
 fi
 
 echo "==> Done. Reboot required for changes to take effect."

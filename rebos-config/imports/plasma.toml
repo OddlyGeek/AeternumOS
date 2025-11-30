@@ -2,8 +2,10 @@
 items = [
   # "wayland",
   "plasma6-plasma",
+  "konsole",
+  "kf6-breeze-icons",
   # "kde6-devel",
-  "plasma6-xdg-desktop-portal-kde",
-  "sddm",
-  "plasma-wayland-protocols"
+  # "plasma6-xdg-desktop-portal-kde",
+  # "sddm",
+  # "plasma-wayland-protocols"
 ]
