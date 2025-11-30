@@ -1,0 +1,9 @@
+[managers.plasma]
+items = [
+  # "wayland",
+  "plasma6-plasma",
+  # "kde6-devel",
+  "plasma6-xdg-desktop-portal-kde",
+  "sddm",
+  "plasma-wayland-protocols"
+]

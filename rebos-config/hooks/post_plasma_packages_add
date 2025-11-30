@@ -1,0 +1,8 @@
+#!/bin/sh
+
+sysrc dbus_enable="YES"
+
+sysctl net.local.stream.recvspace=65536
+sysctl net.local.stream.sendspace=65536
+
+sysctl -f /etc/sysctl.conf

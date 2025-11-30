@@ -1,0 +1,5 @@
+[managers.wayland]
+items = [
+  "wayland",
+  "seatd",
+]

@@ -6,7 +6,8 @@
 imports =[
     "drivers",
     "base_packages",
-    "hyprland",
+    #"hyprland",
+    "plasma",
 ]
 
 # Packages to be installed via the native package manager.

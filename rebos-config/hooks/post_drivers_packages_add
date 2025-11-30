@@ -3,15 +3,16 @@
 set -e
 
 LOADER_CONF="/boot/loader.conf"
+USER_RUNTIME_DIR="/var/run/user/$(id -u)"
 
 echo "==> Configuring NVIDIA DRM..."
 
 # 1. Add hw.nvidiadrm.modeset=1 to /boot/loader.conf
-if sudo grep -q '^hw\.nvidiadrm\.modeset=1' "$LOADER_CONF" 2>/dev/null; then
+if sudo grep -q '^hw\.nvidiadrm\.modeset="1"' "$LOADER_CONF" 2>/dev/null; then
     echo "hw.nvidiadrm.modeset already set in $LOADER_CONF"
 else
-    echo "Adding hw.nvidiadrm.modeset=1 to $LOADER_CONF"
-    echo 'hw.nvidiadrm.modeset=1' | sudo tee -a "$LOADER_CONF" >/dev/null
+    echo "Adding hw.nvidiadrm.modeset=\"1\" to $LOADER_CONF"
+    echo 'hw.nvidiadrm.modeset="1"' | sudo tee -a "$LOADER_CONF" >/dev/null
 fi
 
 # 2. Add nvidia-drm to kld_list via sysrc
@@ -19,7 +20,7 @@ if sudo sysrc -n kld_list | grep -qw "nvidia-drm"; then
     echo "nvidia-drm already present in kld_list"
 else
     echo "Adding nvidia-drm to kld_list"
-    sudo sysrc kld_list+="nvidia-drm"
+    sudo sysrc kld_list+=nvidia-drm
 fi
 
 echo "==> Done. Reboot required for changes to take effect."
