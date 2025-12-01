@@ -1,0 +1,8 @@
+[managers.bootstrap]
+items = [
+  "flatpak",
+  "paru",
+  "rustup",
+  "cargo",
+  "helix",
+]

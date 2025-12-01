@@ -1,5 +1,6 @@
 [managers.drivers]
 items = [
-  "nvidia-driver",
-  "nvidia-drm-kmod"
+  "nvidia",
+  "nvidia-dkms",
+  "nvidia-utils"
 ]

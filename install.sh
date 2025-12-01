@@ -9,7 +9,7 @@ echo "==> Ensuring git is installed..."
 
 if ! command -v git >/dev/null 2>&1; then
     echo "Git not found, installing..."
-    sudo pkg install -y git
+    sudo  pacman -S git
 else
     echo "Git already installed."
 fi
@@ -45,9 +45,7 @@ fi
 echo "==> Installing rebos using cargo..."
 
 if ! command -v rebos >/dev/null 2>&1; then
-    cd AeternumOS-Rebos
-    cargo install --path .
-    cd ..
+    cargo install rebos
 else
     echo "==> rebos already installed, skipping cargo install"
 fi
@@ -68,10 +66,17 @@ cp -r AeternumOS/rebos_config/* "$CONFIG_DIR"
 
 # ---- Rebos Commit and Build ----
 
-echo "==> Running rebos commit..."
-rebos commit "Initial Run"
+while getopts "b" opt; do
+    case $opt in
+        b)
 
-echo "==> Generating build..."
-rebos gen current build
+            echo "==> Running rebos commit..."
+            rebos commit "Initial Run"
 
-echo "==> Initialization completed successfully!"
+            echo "==> Generating build..."
+            rebos gen current build
+
+            echo "==> Initialization completed successfully!"
+            ;;
+    esac
+done
