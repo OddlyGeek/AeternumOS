@@ -4,8 +4,9 @@
 
 # Other generation files to import. (Example: intensive_apps -> ~/.config/rebos/imports/intensive_apps.toml)
 imports =[
+    "bootstrap",
     "drivers",
-    "wayland",
+    # "wayland",
     "base_packages",
     #"hyprland",
     "plasma",

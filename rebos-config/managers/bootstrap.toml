@@ -9,13 +9,13 @@
 # Example: add = "sudo apt install #:?"
 
 add = "sudo pacman -S --noconfirm #:?" # Example: sudo apt install #:?
-remove = "sudo pacman -Rs -y #:?" # Example: sudo apt remove #:?
+remove = "sudo pacman -Rs --noconfirm #:?" # Example: sudo apt remove #:?
 sync = "sudo pkg update" # Example: sudo apt update
 upgrade = "sudo pacman -Syu" # Example: sudo apt upgrade
 
-plural_name = "driver packages"
+plural_name = "bootstrap packages"
 
-hook_name = "drivers_packages" # This is used in hooks. (Example: post_system_packages_add)
+hook_name = "bootstrap_packages" # This is used in hooks. (Example: post_system_packages_add)
 
 # ------------------------------- #
 #    Additional configuration.    #
