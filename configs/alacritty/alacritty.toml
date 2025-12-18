@@ -1,0 +1,29 @@
+general.import = [
+   "~/.config/alacritty/themes/osaka-jade.toml"
+  ]
+
+[env]
+TERM = "xterm-256color"
+
+[terminal]
+shell = {program = "/usr/local/bin/zsh", args = ["-l"]} 
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 12
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+dimensions = { columns=120, lines=48}
+opacity = 0.85
+blur = true
+
+[keyboard]
+bindings = [
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" }
+]

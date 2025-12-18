@@ -1,0 +1,4 @@
+theme = "ayu_dark"
+
+[editor.soft-wrap]
+enable = true
