@@ -20,6 +20,13 @@ echo "==> Starting AeternumOS initialization..."
 mkdir -p "$BASE_DIR"
 cd "$BASE_DIR"
 
+
+
+#  Need to move this to hook - git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+
+
 # ---- Clone Repositories ----
 
 if [ ! -d "AeternumOS" ]; then
