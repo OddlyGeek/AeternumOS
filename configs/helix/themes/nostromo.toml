@@ -1,0 +1,102 @@
+
+# ===============================
+# Nostromo – Helix
+# ===============================
+
+inherits = "default"
+
+# -------------------------------
+# UI
+# -------------------------------
+
+"ui.background" = { bg = "#141D22" }
+"ui.text" = "#A5FBFF"
+"ui.text.focus" = { fg = "#A5FBFF", bg = "#154547" }
+
+"ui.cursor" = { fg = "#141D22", bg = "#A5FBFF" }
+"ui.cursor.primary" = { fg = "#141D22", bg = "#A5FBFF" }
+"ui.cursor.match" = { fg = "#141D22", bg = "#6beaff" }
+
+"ui.selection" = { bg = "#154547" }
+"ui.selection.primary" = { bg = "#154547" }
+
+"ui.linenr" = "#3a4c4e"
+"ui.linenr.selected" = "#A5FBFF"
+
+"ui.statusline" = { fg = "#8fd8db", bg = "#141D22" }
+"ui.statusline.inactive" = { fg = "#3a4c4e", bg = "#141D22" }
+"ui.statusline.normal" = { fg = "#A5FBFF", bg = "#141D22" }
+"ui.statusline.insert" = { fg = "#3df2ad", bg = "#141D22" }
+"ui.statusline.select" = { fg = "#ffb78a", bg = "#141D22" }
+
+"ui.popup" = { fg = "#91b0b1", bg = "#141D22" }
+"ui.window" = "#154547"
+"ui.help" = { fg = "#91b0b1", bg = "#141D22" }
+
+"ui.menu" = { fg = "#91b0b1", bg = "#141D22" }
+"ui.menu.selected" = { fg = "#A5FBFF", bg = "#154547" }
+
+"ui.virtual.whitespace" = "#3a4c4e"
+"ui.virtual.indent-guide" = "#3a4c4e"
+"ui.virtual.ruler" = "#154547"
+
+# -------------------------------
+# Diagnostics
+# -------------------------------
+
+"diagnostic.error" = { fg = "#dd513c" }
+"diagnostic.warning" = { fg = "#ffb78a" }
+"diagnostic.info" = { fg = "#34A2DF" }
+"diagnostic.hint" = { fg = "#3df2ad" }
+
+# -------------------------------
+# Syntax
+# -------------------------------
+
+"comment" = { fg = "#3a4c4e", modifiers = ["italic"] }
+
+"keyword" = "#dd513c"
+"keyword.control" = "#dd513c"
+"keyword.operator" = "#dd513c"
+
+"operator" = "#dd513c"
+"punctuation" = "#91b0b1"
+
+"function" = "#6beaff"
+"function.method" = "#6beaff"
+"function.macro" = "#3df2ad"
+
+"type" = "#4DDCFF"
+"type.builtin" = "#4DDCFF"
+"type.enum.variant" = "#3df2ad"
+
+"variable" = "#A5FBFF"
+"variable.builtin" = "#ffb78a"
+"variable.parameter" = { fg = "#92dde1", modifiers = ["italic"] }
+"variable.member" = "#f28f70"
+
+"constant" = "#f97e72"
+"constant.numeric" = "#4DDCFF"
+"constant.builtin" = "#ffb78a"
+
+"string" = "#3f9bbc"
+"string.escape" = "#36f9f6"
+"string.special" = "#36f9f6"
+
+"attribute" = "#72f1b8"
+"namespace" = "#72f1b8"
+
+"label" = "#ffb78a"
+
+# -------------------------------
+# Markup (Markdown, Docs)
+# -------------------------------
+
+"markup.heading" = { fg = "#f28f70", modifiers = ["bold"] }
+"markup.list" = "#f28f70"
+"markup.bold" = { fg = "#2EE2FA", modifiers = ["bold"] }
+"markup.italic" = { fg = "#2EE2FA", modifiers = ["italic"] }
+"markup.quote" = { fg = "#b6b1b1", modifiers = ["italic"] }
+"markup.link.url" = "#72f1b8"
+"markup.link.text" = "#dd513c"
+"markup.raw" = "#91b0b1"

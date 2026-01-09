@@ -1,0 +1,106 @@
+# ==================================
+# Weyland-Yutani – Helix
+# Corporate / Command Variant
+# ==================================
+
+inherits = "default"
+
+# -------------------------------
+# UI
+# -------------------------------
+
+"ui.background" = { bg = "#141D22" }
+
+# Primary phosphor yellow
+"ui.text" = "#FFD866"
+"ui.text.focus" = { fg = "#141D22", bg = "#FFD866" }
+
+"ui.cursor" = { fg = "#141D22", bg = "#FFD866" }
+"ui.cursor.primary" = { fg = "#141D22", bg = "#FFD866" }
+"ui.cursor.match" = { fg = "#141D22", bg = "#FFB703" }
+
+"ui.selection" = { bg = "#3A2F12" }
+"ui.selection.primary" = { bg = "#3A2F12" }
+
+"ui.linenr" = "#3a4c4e"
+"ui.linenr.selected" = "#FFD866"
+
+"ui.statusline" = { fg = "#FFD866", bg = "#141D22" }
+"ui.statusline.inactive" = { fg = "#3a4c4e", bg = "#141D22" }
+"ui.statusline.normal" = { fg = "#FFD866", bg = "#141D22" }
+"ui.statusline.insert" = { fg = "#A3E635", bg = "#141D22" }
+"ui.statusline.select" = { fg = "#FFB703", bg = "#141D22" }
+
+"ui.popup" = { fg = "#C7B97B", bg = "#141D22" }
+"ui.window" = "#3A2F12"
+"ui.help" = { fg = "#C7B97B", bg = "#141D22" }
+
+"ui.menu" = { fg = "#C7B97B", bg = "#141D22" }
+"ui.menu.selected" = { fg = "#141D22", bg = "#FFD866" }
+
+"ui.virtual.whitespace" = "#3a4c4e"
+"ui.virtual.indent-guide" = "#3a4c4e"
+"ui.virtual.ruler" = "#3A2F12"
+
+# -------------------------------
+# Diagnostics
+# -------------------------------
+
+"diagnostic.error" = { fg = "#C2412D" }
+"diagnostic.warning" = { fg = "#FFB703" }
+"diagnostic.info" = { fg = "#6BA3A5" }
+"diagnostic.hint" = { fg = "#A3E635" }
+
+# -------------------------------
+# Syntax
+# -------------------------------
+
+"comment" = { fg = "#6B6B4E", modifiers = ["italic"] }
+
+# Keywords = authority
+"keyword" = "#FFB703"
+"keyword.control" = "#FFB703"
+"keyword.operator" = "#FFB703"
+
+"operator" = "#FFB703"
+"punctuation" = "#C7B97B"
+
+"function" = "#FFD866"
+"function.method" = "#FFD866"
+"function.macro" = "#A3E635"
+
+"type" = "#FFD866"
+"type.builtin" = "#FFD866"
+"type.enum.variant" = "#A3E635"
+
+"variable" = "#E6D58A"
+"variable.builtin" = "#FFB703"
+"variable.parameter" = { fg = "#C7B97B", modifiers = ["italic"] }
+"variable.member" = "#D9C97A"
+
+"constant" = "#FF9F1C"
+"constant.numeric" = "#FFD866"
+"constant.builtin" = "#FFB703"
+
+"string" = "#B8C99D"
+"string.escape" = "#A3E635"
+"string.special" = "#A3E635"
+
+"attribute" = "#A3E635"
+"namespace" = "#A3E635"
+
+"label" = "#FFB703"
+
+# -------------------------------
+# Markup
+# -------------------------------
+
+"markup.heading" = { fg = "#FFD866", modifiers = ["bold"] }
+"markup.list" = "#FFD866"
+"markup.bold" = { fg = "#FFB703", modifiers = ["bold"] }
+"markup.italic" = { fg = "#C7B97B", modifiers = ["italic"] }
+"markup.quote" = { fg = "#6B6B4E", modifiers = ["italic"] }
+"markup.link.url" = "#A3E635"
+"markup.link.text" = "#FF9F1C"
+"markup.raw" = "#C7B97B"
+
