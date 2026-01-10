@@ -1,6 +1,7 @@
 command = /usr/bin/zsh --login --interactive
 
-theme = Aurora
+#theme = Aurora # My favorite included theme for Ghostty
+theme = Nostromo-ui
 
 # Font
 font-family = "0xProto Nerd Font"
